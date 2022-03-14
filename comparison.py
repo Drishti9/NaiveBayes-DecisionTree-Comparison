@@ -15,7 +15,7 @@ def binary_classification(inputs, target, target_names, title, use_pos_label):
     print(f"############{title}############")
 
     # splitting training and testing data
-    input_train, input_test, target_train, target_test = train_test_split(inputs, target, test_size=0.25, random_state=0)
+    input_train, input_test, target_train, target_test = train_test_split(inputs, target, test_size=0.25, random_state=7)
 
     # Using Decision Tree as a classifier model
     print("Decision Tree ID3")
@@ -80,7 +80,7 @@ def multi_class_classification(inputs, target, target_names, title, use_pos_labe
     print(f"############{title}############")
 
     # splitting training and testing data
-    input_train, input_test, target_train, target_test = train_test_split(inputs, target, test_size=0.25, random_state=0)
+    input_train, input_test, target_train, target_test = train_test_split(inputs, target, test_size=0.25, random_state=7)
 
     # Using Decision Tree as a classifier model
     print("Decision Tree ID3")
